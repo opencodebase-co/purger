@@ -1,0 +1,6 @@
+{
+    "panelUrl": "https://panel.example.com",
+    "apiKey": "ptla_",
+    "nodeIds": [1, 2], 
+    "excludedNameKeyword": "BBQSAUCE" 
+  }
