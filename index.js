@@ -75,6 +75,5 @@ const main = async () => {
     } catch (error) {
       console.error(chalk.red('[WORKER] Error:'), error);
     }
-    console.log(chalk.blackBright('[WORKER] Waiting...'));
 };
 main().catch(error => console.error(chalk.red('[WORKER] Unexpected error:'), error));
