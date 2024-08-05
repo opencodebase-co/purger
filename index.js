@@ -67,9 +67,8 @@ const purgeServers = async () => {
 };
 
 const main = async () => {
-  while (true) {
     console.log(chalk.blue('[WORKER] Initialising...'));
-    console.log(chalk.blue('[WORKER] Pterodactyl Mass Purger v1. Made with ❤ by opencodebase.co.'));
+    console.log(chalk.blue('[WORKER] Made with ❤ by opencodebase.co'));
     try {
       await purgeServers();
       console.log(chalk.green('[WORKER] Completed successfully.'));
@@ -77,8 +76,5 @@ const main = async () => {
       console.error(chalk.red('[WORKER] Error:'), error);
     }
     console.log(chalk.blackBright('[WORKER] Waiting...'));
-    await new Promise(resolve => setTimeout(resolve, 10000));
-  }
 };
-
 main().catch(error => console.error(chalk.red('[WORKER] Unexpected error:'), error));
